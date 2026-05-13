@@ -1,0 +1,27 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "description": "Node.js API",
+  "keywords": [
+    "Node.js",
+    "Node",
+    "Rest",
+    "API",
+    "API"
+  ],
+  "homepage": "https://github.com/erickrh/api-rest#readme",
+  "bugs": {
+    "url": "https://github.com/erickrh/api-rest/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erickrh/api-rest.git"
+  },
+  "license": "MIT",
+  "author": "Erick Riaño",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
