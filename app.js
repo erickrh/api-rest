@@ -24,6 +24,15 @@ app.use(cors({
 }));
 app.disable('x-powered-by');
 
+app.get('/', (req, res) => {
+    res.json({
+        message: 'REST API is running',
+        endpoints: {
+            movies: '/movies'
+        }
+    });
+});
+
 app.get('/movies', (req, res) => {
     const origin = req.header('origin');
     if (ACCEPTED_ORIGINS.includes(origin) || !origin) {
@@ -121,7 +130,8 @@ app.options('/movies/:id', (req, res) => {
 });
 
 const PORT = process.env.PORT ?? 3000;
+const HOST = '0.0.0.0';
 
-app.listen(PORT, () => {
+app.listen(PORT, HOST, () => {
     console.log(`Server is listening on http://localhost:${PORT}`);
 });
